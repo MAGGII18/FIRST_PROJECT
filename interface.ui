@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Plagiarism Checker</property>
+    <property name="default-width">400</property>
+    <property name="default-height">250</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin">20</property>
+
+        <!-- File 1 Chooser -->
+        <child>
+          <object class="GtkFileChooserButton" id="file_chooser1">
+            <property name="title">Select File 1</property>
+          </object>
+        </child>
+
+        <!-- File 2 Chooser -->
+        <child>
+          <object class="GtkFileChooserButton" id="file_chooser2">
+            <property name="title">Select File 2</property>
+          </object>
+        </child>
+
+        <!-- Check Plagiarism Button -->
+        <child>
+          <object class="GtkButton" id="check_button">
+            <property name="label">Check Plagiarism</property>
+          </object>
+        </child>
+
+        <!-- Result Label -->
+        <child>
+          <object class="GtkLabel" id="result_label">
+            <property name="label">Similarity: --%</property>
+            <attributes>
+              <attribute name="scale" value="1.2"/>
+            </attributes>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
